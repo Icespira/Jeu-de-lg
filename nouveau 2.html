@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rôles du Jeu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f9f9f9;
+    }
+    .roles-list {
+      list-style: none;
+      padding: 0;
+      max-width: 300px;
+    }
+    .role-item {
+      margin-bottom: 10px;
+      cursor: pointer;
+      position: relative;
+    }
+    .role-description {
+      display: none;
+      position: absolute;
+      left: 120%;
+      top: 0;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 200px;
+      z-index: 1;
+    }
+    .role-item:hover .role-description {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <ul class="roles-list">
+    <li class="role-item">
+      Fossoyeur
+      <div class="role-description">
+        À sa mort, il peut désigner un Loup-Garou qui mourra immédiatement.
+      </div>
+    </li>
+    <li class="role-item">
+      Sorcière
+      <div class="role-description">
+        Elle possède deux potions : soigner la victime des Loups-Garous, ou tuer quelqu’un.
+      </div>
+    </li>
+    <li class="role-item">
+      Voyante
+      <div class="role-description">
+        Chaque nuit, elle peut découvrir le rôle d'un joueur pour aider les villageois.
+      </div>
+    </li>
+    <li class="role-item">
+      Soeurs
+      <div class="role-description">
+        Les Soeurs se connaissent dès le début de la partie et peuvent se faire confiance.
+      </div>
+    </li>
+    <li class="role-item">
+      Villageois
+      <div class="role-description">
+        Les Villageois n'ont pas de pouvoirs spéciaux, mais doivent débusquer les Loups-Garous.
+      </div>
+    </li>
+    <li class="role-item">
+      Père des Loups
+      <div class="role-description">
+        Chaque jour, il reçoit un mot qu'il doit prononcer avant le coucher du soleil. S'il échoue, il meurt.
+      </div>
+    </li>
+    <li class="role-item">
+      Loup Bavard
+      <div class="role-description">
+        Se réveille la nuit avec les Loups-Garous. Une nuit sur deux, il peut dévorer un joueur de son choix.
+      </div>
+    </li>
+    <li class="role-item">
+      LG Blanc
+      <div class="role-description">
+        Le premier jour, il doit tuer une cible pour gagner immédiatement. Sinon, il devient villageois.
+      </div>
+    </li>
+    <li class="role-item">
+      Mercenaire
+      <div class="role-description">
+        Doit tuer une cible au premier jour pour gagner. S'il échoue, il devient villageois.
+      </div>
+    </li>
+    <li class="role-item">
+      Rat Malade
+      <div class="role-description">
+        Chaque nuit, il contamine deux joueurs. Gagne si tous les joueurs sont malades.
+      </div>
+    </li>
+    <li class="role-item">
+      Chasseur
+      <div class="role-description">
+        À sa mort, il peut entraîner un autre joueur avec lui dans la tombe.
+      </div>
+    </li>
+    <li class="role-item">
+      Garde
+      <div class="role-description">
+        Chaque nuit, il protège un joueur d'une attaque des Loups-Garous.
+      </div>
+    </li>
+    <li class="role-item">
+      Cupidon
+      <div class="role-description">
+        La première nuit, il désigne deux Amoureux. Si l'un meurt, l'autre le suit.
+      </div>
+    </li>
+    <li class="role-item">
+      Mentaliste
+      <div class="role-description">
+        Perçoit une seule fois le vote des loups. Peut empêcher une exécution une fois.
+      </div>
+    </li>
+    <li class="role-item">
+      Nécromancien
+      <div class="role-description">
+        Peut communiquer deux fois avec les morts pour des informations précieuses.
+      </div>
+    </li>
+    <li class="role-item">
+      Dictateur
+      <div class="role-description">
+        Peut prendre le contrôle du vote une fois. Devient Maire s'il exécute un Loup-Garou.
+      </div>
+    </li>
+    <li class="role-item">
+      Chaperon Rouge
+      <div class="role-description">
+        Tant que le Chasseur est en vie, elle est protégée des attaques des Loups-Garous.
+      </div>
+    </li>
+  </ul>
+</body>
+</html>
